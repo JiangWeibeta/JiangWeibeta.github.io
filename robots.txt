@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jiangweibeta.github.io/sitemap.xml
