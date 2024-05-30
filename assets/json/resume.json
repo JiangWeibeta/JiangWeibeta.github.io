@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Wei Jiang,
+    "label": "Ph.D Student",
     "image": "",
-    "email": "albert@einstein.de",
+    "email": "wei.jiang1999@outlook.com",
     "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "https://jiangweibeta.github.io/",
+    "summary": "Neural Compression",
     "location": {
-      "address": "2712 Broadway St",
+      "address": "University Town of Shenzhen",
       "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Shenzhen",
+      "countryCode": "China",
+      "region": "Guangdong"
     },
     "profiles": [
       {
