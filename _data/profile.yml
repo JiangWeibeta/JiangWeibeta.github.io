@@ -1,0 +1,104 @@
+# ---------------------------------------------------------------------------
+# Identity, biography, links, career, education, awards and service.
+# Edit the text here — the page picks it up automatically.
+# ---------------------------------------------------------------------------
+
+name: "Wei Jiang"
+initials: "WJ"
+headline: "Researcher in Neural Compression"
+affiliation: "ByteDance"
+location: "Beijing, China"
+avatar: "/assets/images/portrait.jpg"
+
+# Each item is one paragraph of the "About Me" section.
+intro:
+  - "I am a researcher in the Multimedia Standards Team at ByteDance's Multimedia Laboratory, where I work on deep-learning-based image and video compression and its standardization."
+  - "I received my Ph.D. in Computer Science from Peking University in 2026, advised by Prof. Ronggang Wang, and my B.Eng. from Chongqing University in 2021."
+
+# Sidebar links. `icon` selects one of the icons defined in index.html
+# (mail, scholar, orcid, github, twitter, linkedin).
+links:
+  - label: "Email"
+    icon: "mail"
+    url: "mailto:wei.jiang1999@outlook.com"
+    text: "wei.jiang1999@outlook.com"
+  - label: "Scholar"
+    icon: "scholar"
+    url: "https://scholar.google.com/citations?user=lEbiUfcAAAAJ"
+    text: "Google Scholar"
+  - label: "ORCID"
+    icon: "orcid"
+    url: "https://orcid.org/0009-0001-0169-1924"
+    text: "0009-0001-0169-1924"
+  - label: "GitHub"
+    icon: "github"
+    url: "https://github.com/JiangWeibeta"
+    text: "JiangWeibeta"
+
+# Reverse-chronological. `period` is right-aligned.
+career:
+  - title: "ByteDance"
+    subtitle: "Researcher · Multimedia Standards"
+    period: "Jul 2026 – Present"
+  - title: "ByteDance"
+    subtitle: "Research Intern · Multimedia Standards"
+    period: "Feb 2023 – Jul 2026"
+  - title: "SenseTime"
+    subtitle: "Research Intern · ISP & Codec Group"
+    period: "Jan 2022 – Sep 2022"
+
+education:
+  - title: "Ph.D. in Computer Science"
+    subtitle: "Peking University"
+    period: "2021 – 2026"
+    note: "Advisor: Prof. Ronggang Wang"
+  - title: "B.Eng. in Vehicle Engineering"
+    subtitle: "Chongqing University"
+    period: "2017 – 2021"
+
+awards:
+  - title: "Runner-up, CLIC 2024 Image Track"
+    subtitle: "Challenge on Learned Image Compression @ DCC 2024"
+    period: "2024"
+  - title: "Third place, Practical End-to-End Image/Video Compression Challenge"
+    subtitle: "Visual Communications and Image Processing (VCIP) 2023"
+    period: "2023"
+  - title: "Runner-up, CLIC 2022 Image Track"
+    subtitle: "Challenge on Learned Image Compression @ CVPR 2022"
+    period: "2022"
+
+# Peer review and organization. `label` names the group, `name` is the venue
+# written out in full with its abbreviation, `years` is right-aligned.
+service:
+  - label: "Conferences"
+    items:
+      - name: "Conference on Neural Information Processing Systems (NeurIPS)"
+        years: "2026"
+      - name: "International Conference on Machine Learning (ICML)"
+        years: "2025, 2026"
+      - name: "International Conference on Learning Representations (ICLR)"
+        years: "2025, 2026, 2027"
+      - name: "AAAI Conference on Artificial Intelligence (AAAI)"
+        years: "2026, 2027"
+      - name: "ACM International Conference on Multimedia (ACM MM)"
+        years: "2024, 2025"
+      - name: "ACM International Conference on Multimedia, Dataset Track (ACM MM)"
+        years: "2025"
+      - name: "Data Compression Conference (DCC)"
+        years: "2024"
+  - label: "Journals"
+    items:
+      - name: "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)"
+      - name: "IEEE Transactions on Image Processing (TIP)"
+      - name: "IEEE Transactions on Multimedia (TMM)"
+      - name: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)"
+      - name: "IEEE Transactions on Industrial Informatics (TII)"
+      - name: "IEEE Transactions on Broadcasting (TB)"
+      - name: "ACM Transactions on Multimedia Computing, Communications and Applications (TOMM)"
+      - name: "Pattern Recognition (PR)"
+  - label: "Organization"
+    items:
+      - name: "Grand Challenge on Neural Network-based Video Coding, IEEE International Symposium on Circuits and Systems (ISCAS)"
+        years: "2024, 2025"
+
+footer: "Last updated September 2026."

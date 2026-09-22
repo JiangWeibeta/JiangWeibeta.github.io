@@ -1,0 +1,171 @@
+# ---------------------------------------------------------------------------
+# Publications, grouped by research area, newest first inside each group.
+#
+#   name    group heading
+#   papers  the papers of that group
+#
+# Paper fields:
+#   title      paper title (plain text)
+#   authors    author list; wrap your own name in <strong> to highlight it
+#   venue      conference / journal line (plain text)
+#   tags       short badges, e.g. "CCF-A", "Oral", "Preprint"
+#   highlight  optional one-sentence summary of the contribution
+#   links      optional list of {label, url}
+#
+# A group with no papers is simply not rendered.
+# ---------------------------------------------------------------------------
+
+categories:
+  - name: "Neural Video Compression"
+    papers:
+      - year: "2026"
+        title: "BiCRVC: An Efficient Bidirectional Neural Video Compression Framework via Coupled Representation Coding"
+        authors: "<strong>Wei Jiang</strong>, Junru Li, Kai Zhang, and Li Zhang"
+        venue: "arXiv preprint arXiv:2608.16175, 2026"
+        tags: ["Preprint"]
+        highlight: "Codes motion and frame latents through one coupled codec, with multi-candidate motion estimation and bidirectional motion feature propagation; about 30× faster 1080p decoding than recent bidirectional codecs."
+        links:
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2608.16175"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=BiCRVC%3A+An+Efficient+Bidirectional+Neural+Video+Compression+Framework+via+Coupled+Representation+Coding"
+
+      - year: "2025"
+        title: "BiECVC: Gated Diversification of Bidirectional Contexts for Learned Video Compression"
+        authors: "<strong>Wei Jiang</strong>, Junru Li, Kai Zhang, and Li Zhang"
+        venue: "Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM), 7248–7257, 2025"
+        tags: ["CCF-A"]
+        highlight: "First end-to-end video codec to outperform VTM 13.2 RA across all test sets; 13.4% bitrate saving at intra period 32."
+        links:
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2505.09193"
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3746027.3754725"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=BiECVC%3A+Gated+Diversification+of+Bidirectional+Contexts+for+Learned+Video+Compression"
+
+      - year: "2025"
+        title: "ECVC: Exploiting Non-Local Correlations in Multiple Frames for Contextual Video Compression"
+        authors: "<strong>Wei Jiang</strong>, Junru Li, Kai Zhang, and Li Zhang"
+        venue: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 7331–7341, 2025"
+        tags: ["CCF-A"]
+        highlight: "Linear-attention motion estimation that models redundancy without explicit optical flow; 32.1% bitrate saving over VTM 13.2 LDB."
+        links:
+          - label: "PDF"
+            url: "https://openaccess.thecvf.com/content/CVPR2025/papers/Jiang_ECVC_Exploiting_Non-Local_Correlations_in_Multiple_Frames_for_Contextual_Video_CVPR_2025_paper.pdf"
+          - label: "DOI"
+            url: "https://doi.org/10.1109/CVPR52734.2025.00687"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=ECVC%3A+Exploiting+Non-Local+Correlations+in+Multiple+Frames+for+Contextual+Video+Compression"
+
+      - year: "2024"
+        title: "LVC-LGMC: Joint Local and Global Motion Compensation for Learned Video Compression"
+        authors: "<strong>Wei Jiang</strong>, Junru Li, Kai Zhang, and Li Zhang"
+        venue: "Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2955–2959, 2024"
+        tags: ["Oral"]
+        highlight: "Combines local and global motion compensation for low-delay learned video compression."
+        links:
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2402.00680"
+          - label: "DOI"
+            url: "https://doi.org/10.1109/ICASSP48485.2024.10448081"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=LVC-LGMC%3A+Joint+Local+and+Global+Motion+Compensation+for+Learned+Video+Compression"
+
+  - name: "Neural Image Compression"
+    papers:
+      - year: "2026"
+        title: "MLICv2: Enhanced Multi-Reference Entropy Modeling for Learned Image Compression"
+        authors: "<strong>Wei Jiang</strong>, Yongqi Zhai, Jiayu Yang, Feng Gao, and Ronggang Wang"
+        venue: "ACM Transactions on Multimedia Computing, Communications and Applications (TOMM), 22(4), 1–23, 2026"
+        tags: ["CCF-B"]
+        highlight: "Enhanced transforms, context re-weighting, entropy-coding skip and online encoder optimization; 16.5–20.5% bitrate saving over VTM 17.0 Intra on Kodak."
+        links:
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2504.19119"
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3785671"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=MLICv2%3A+Enhanced+Multi-Reference+Entropy+Modeling+for+Learned+Image+Compression"
+
+      - year: "2026"
+        title: "SSCL: Adversarially Guided Image Compression via Semantic and Spectral Consistency Learning"
+        authors: "<strong>Wei Jiang</strong>, Yongqi Zhai, Jiayu Yang, Bohao Feng, Wenqiang Wang, Bo Huang, Lin Ding, Feng Gao, and Ronggang Wang"
+        venue: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 40(17), 14937–14945, 2026"
+        tags: ["CCF-A", "Oral"]
+        highlight: "Perceptual image compression guided by spectral and semantic consistency; 35.9% bitrate saving over the previous best perception-oriented method."
+        links:
+          - label: "PDF"
+            url: "https://ojs.aaai.org/index.php/AAAI/article/view/38515/42477"
+          - label: "DOI"
+            url: "https://doi.org/10.1609/aaai.v40i17.38515"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=SSCL%3A+Adversarially+Guided+Image+Compression+via+Semantic+and+Spectral+Consistency+Learning"
+
+      - year: "2025"
+        title: "PORT: Perception-Oriented Image Compression with Real-Time Decoding"
+        authors: "<strong>Wei Jiang</strong>, Bohao Feng, Wenqiang Wang, Lin Ding, and Ronggang Wang"
+        venue: "Proceedings of the 7th Challenge on Learned Image Compression (CLIC), 2025"
+        highlight: "Perception-oriented image codec designed for practical decoding speed."
+        links:
+          - label: "PDF"
+            url: "https://openreview.net/pdf?id=TcDugmwn6r"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=PORT%3A+Perception-Oriented+Image+Compression+with+Real-Time+Decoding"
+
+      - year: "2025"
+        title: "MLIC++: Linear Complexity Multi-Reference Entropy Modeling for Learned Image Compression"
+        authors: "<strong>Wei Jiang</strong>, Jiayu Yang, Yongqi Zhai, Feng Gao, and Ronggang Wang"
+        venue: "ACM Transactions on Multimedia Computing, Communications and Applications (TOMM), 21(5), 1–25, 2025"
+        tags: ["CCF-B"]
+        highlight: "Linear-complexity global context modelling that replaces full attention at a fraction of the memory cost; 13.4% bitrate saving over VTM 17.0 Intra."
+        links:
+          - label: "PDF"
+            url: "https://dl.acm.org/doi/pdf/10.1145/3719011"
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3719011"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=MLIC%2B%2B%3A+Linear+Complexity+Multi-Reference+Entropy+Modeling+for+Learned+Image+Compression"
+
+      - year: "2024"
+        title: "LLIC: Large Receptive Field Transform Coding with Adaptive Weights for Learned Image Compression"
+        authors: "<strong>Wei Jiang</strong>, Peirong Ning, Jiayu Yang, Yongqi Zhai, Feng Gao, and Ronggang Wang"
+        venue: "IEEE Transactions on Multimedia (TMM), 26, 10937–10951, 2024"
+        tags: ["CCF-A"]
+        highlight: "Dynamic large-kernel transforms that widen the receptive field of the analysis and synthesis networks; 10.9% bitrate saving over VTM 17.0 Intra."
+        links:
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2304.09571"
+          - label: "DOI"
+            url: "https://doi.org/10.1109/TMM.2024.3416831"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=LLIC%3A+Large+Receptive+Field+Transform+Coding+with+Adaptive+Weights+for+Learned+Image+Compression"
+
+      - year: "2023"
+        title: "MLIC: Multi-Reference Entropy Model for Learned Image Compression"
+        authors: "<strong>Wei Jiang</strong>, Jiayu Yang, Yongqi Zhai, Peirong Ning, Feng Gao, and Ronggang Wang"
+        venue: "Proceedings of the 31st ACM International Conference on Multimedia (ACM MM), 7618–7627, 2023"
+        tags: ["CCF-A"]
+        highlight: "Multi-reference entropy model with attention-based local and global context; 11.4% bitrate saving over VTM 17.0 Intra."
+        links:
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2211.07273"
+          - label: "DOI"
+            url: "https://doi.org/10.1145/3581783.3611694"
+          - label: "Scholar"
+            url: "https://scholar.google.com/scholar?q=MLIC%3A+Multi-Reference+Entropy+Model+for+Learned+Image+Compression"
+
+  - name: "Image Quality Assessment"
+    papers:
+      - year: "2022"
+        title: "Image Quality Assessment with Transformers and Multi-Metric Fusion Modules"
+        authors: "<strong>Wei Jiang</strong>, Litian Li, Yi Ma, Yongqi Zhai, Zheng Yang, and Ronggang Wang"
+        venue: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 1804–1808, 2022"
+        highlight: "A learned metric combining ConvNeXt features, transformer-based distortion comparison and multi-metric fusion; 0.780 accuracy on the CLIC validation set."
+        links:
+          - label: "PDF"
+            url: "https://openaccess.thecvf.com/content/CVPR2022W/CLIC/papers/Jiang_Image_Quality_Assessment_With_Transformers_and_Multi-Metric_Fusion_Modules_CVPRW_2022_paper.pdf"
+          - label: "DOI"
+            url: "https://doi.org/10.1109/CVPRW56347.2022.00196"
+          - label: "Code"
+            url: "https://github.com/JiangWeibeta/IQA-TMFM"

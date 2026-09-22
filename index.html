@@ -1,0 +1,219 @@
+---
+layout: default
+title: "Neural Image and Video Compression"
+description: "Academic homepage of Wei Jiang — researcher in neural image and video compression at ByteDance. Publications, career, education and academic service."
+---
+{% assign profile = site.data.profile %}
+{% assign publications = site.data.publications %}
+<a class="skip-link" href="#about">Skip to content</a>
+
+<svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="i-mail" viewBox="0 0 24 24">
+    <rect x="2.75" y="4.75" width="18.5" height="14.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="m3.5 7.25 8.5 5.9 8.5-5.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-scholar" viewBox="0 0 24 24">
+    <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" fill="currentColor"/>
+    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-orcid" viewBox="0 0 32 32">
+    <path d="M16 0C7.16 0 0 7.16 0 16s7.16 16 16 16 16-7.16 16-16S24.84 0 16 0zM4.9 6.5h2.4v14.6H4.9V6.5zm1.2-1.4a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zm6.4 16V6.5h5.9c4 0 6.3 2.7 6.3 7.3 0 4.5-2.6 7.3-6.6 7.3h-5.6zm2.4-2.1h3.1c2.5 0 4.2-1.7 4.2-5.2 0-3.4-1.6-5.1-4.3-5.1h-3v10.3z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-twitter" viewBox="0 0 24 24">
+    <path d="M18.9 2H22l-6.8 7.8L23 22h-6.4l-5-6.6L5.8 22H2.7l7.3-8.3L1.6 2H8l4.7 6.2L18.9 2zm-1.1 18h1.7L7.3 3.8H5.5L17.8 20z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24">
+    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95 4 0 4.4 2.5 4.4 5.8V21h-4v-5.6c0-1.35-.03-3.1-1.9-3.1-1.9 0-2.2 1.45-2.2 2.98V21h-4V9z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">{{ profile.initials }}</span>
+      <span class="brand-name">{{ profile.name }}</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#career">Career</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="#service">Service</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page" id="top">
+  <aside class="profile">
+    <img class="avatar" src="{{ profile.avatar | relative_url }}" alt="Portrait of {{ profile.name }}" width="760" height="760">
+    <p class="eyebrow">Academic Profile</p>
+    <h1 class="profile-name">{{ profile.name }}</h1>
+    <p class="profile-headline">{{ profile.headline }}</p>
+    <p class="profile-meta">{{ profile.affiliation }}<br>{{ profile.location }}</p>
+    <hr class="rule">
+    <ul class="links">
+      {% for link in profile.links %}
+      <li>
+        <a href="{{ link.url }}" title="{{ link.text }}"{% if link.url contains "http" %} target="_blank" rel="noopener"{% endif %}>
+          <svg class="icon" aria-hidden="true"><use href="#i-{{ link.icon }}"></use></svg>
+          <span>{{ link.label }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <main class="content">
+    <section class="section section-about" id="about">
+      <h2 class="page-title">About Me</h2>
+      {% for paragraph in profile.intro %}
+      <p class="lead">{{ paragraph }}</p>
+      {% endfor %}
+    </section>
+
+    <section class="section" id="career">
+      <header class="section-head">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Career</h2>
+      </header>
+      <ul class="entries">
+        {% for item in profile.career %}
+        <li class="entry">
+          <div class="entry-main">
+            <h3 class="entry-title">{{ item.title }}</h3>
+            <p class="entry-subtitle">{{ item.subtitle }}</p>
+            {% if item.note %}<p class="entry-note">{{ item.note }}</p>{% endif %}
+          </div>
+          <p class="entry-period">{{ item.period }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="section" id="education">
+      <header class="section-head">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Education</h2>
+      </header>
+      <ul class="entries">
+        {% for item in profile.education %}
+        <li class="entry">
+          <div class="entry-main">
+            <h3 class="entry-title">{{ item.title }}</h3>
+            <p class="entry-subtitle">{{ item.subtitle }}</p>
+            {% if item.note %}<p class="entry-note">{{ item.note }}</p>{% endif %}
+          </div>
+          <p class="entry-period">{{ item.period }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="section" id="publications">
+      <header class="section-head">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Publications</h2>
+      </header>
+      {% for group in publications.categories %}
+      {% if group.papers.size > 0 %}
+      <section class="pub-group">
+        <h3 class="pub-group-title">{{ group.name }}</h3>
+        <ol class="pub-list">
+          {% for pub in group.papers %}
+          <li class="pub">
+            <p class="pub-year">{{ pub.year }}</p>
+            <div class="pub-body">
+              <h4 class="pub-title">{{ pub.title }}</h4>
+              <p class="pub-authors">{{ pub.authors }}</p>
+              <p class="pub-venue">
+                <span class="pub-venue-name">{{ pub.venue }}</span>
+                {% for tag in pub.tags %}<span class="tag tag--{{ tag | slugify }}">{{ tag }}</span>{% endfor %}
+              </p>
+              {% if pub.highlight %}<p class="pub-note">{{ pub.highlight }}</p>{% endif %}
+              {% if pub.links.size > 0 %}
+              <p class="pub-links">
+                {% for link in pub.links %}<a class="pill" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}
+              </p>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endif %}
+      {% endfor %}
+    </section>
+
+    <section class="section" id="awards">
+      <header class="section-head">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Awards</h2>
+      </header>
+      <ul class="entries">
+        {% for item in profile.awards %}
+        <li class="entry">
+          <div class="entry-main">
+            <h3 class="entry-title">{{ item.title }}</h3>
+            <p class="entry-subtitle">{{ item.subtitle }}</p>
+            {% if item.note %}<p class="entry-note">{{ item.note }}</p>{% endif %}
+          </div>
+          <p class="entry-period">{{ item.period }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="section" id="service">
+      <header class="section-head">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Service</h2>
+      </header>
+      <dl class="service">
+        {% for group in profile.service %}
+        <div class="service-row">
+          <dt class="service-label">{{ group.label }}</dt>
+          <dd class="service-items">
+            <ul class="service-list">
+              {% for item in group.items %}
+              <li class="service-item">
+                <span class="service-name">{{ item.name }}</span>
+                {% if item.years %}<span class="service-years">{{ item.years }}</span>{% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </section>
+
+    <footer class="footer">
+      <p>{{ profile.footer }}</p>
+      <p class="footer-note">Built with Jekyll · hosted on GitHub Pages</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+  // Optional: highlight the navigation entry of the section in view.
+  (function () {
+    var links = [].slice.call(document.querySelectorAll('.nav a'));
+    var sections = links.map(function (link) {
+      return document.querySelector(link.getAttribute('href'));
+    });
+    if (!('IntersectionObserver' in window) || sections.indexOf(null) !== -1) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (link) {
+          link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+    sections.forEach(function (section) { observer.observe(section); });
+  })();
+</script>

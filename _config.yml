@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# Wei Jiang — academic homepage
+#
+# All of the text lives in _data/profile.yml and _data/publications.yml.
+# This file only holds site-wide settings.
+# ---------------------------------------------------------------------------
+
+title: "Wei Jiang"
+description: "Academic homepage of Wei Jiang — researcher in neural image and video compression at ByteDance."
+lang: "en"
+author: "Wei Jiang"
+
+# This is a user site: https://jiangweibeta.github.io/
+# The repository must be named JiangWeibeta.github.io, baseurl stays empty.
+# For a project site (https://<username>.github.io/<repository>) instead use:
+#   url: "https://<username>.github.io"
+#   baseurl: "/<repository>"
+url: "https://jiangweibeta.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+# Files that should not be copied into the published site.
+exclude:
+  - README.md
+  - LICENSE
+  - preview.py
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - SimpleResume      # resume source kept in the repository, not on the web
+  - "IMG_*.JPG"       # reference screenshots
